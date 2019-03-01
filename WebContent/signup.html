@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Sign Up</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form action="signup" onsubmit="return checkForm(this);" method="post"
+	align="center">
+	<br>
+	<h2>
+		<b>Vignet Visitor Management System</b>
+	</h2>
+	
+		<br>
+		<br>
+		<input type="text" name="name" placeholder="Enter Name" required maxLength="32" pattern="[A-Za-Z]{1,15}[\s][A-Za-Z]{1,15}">
+		<br>
+
+		<input type="text" name="no" placeholder="Enter Mobile No" required pattern="[789][0-9]{9}" tital="Enter valid Mobile Number">
+		<br>
+
+		<input type="text" name="uname" placeholder="Enter Email Id" required pattern="[a-zA-Z][a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+		<br>
+
+		<input type="password" name="pwd" placeholder="Passowrd" required>
+		<br>
+
+		<input  type="password"
+			name="repwd" placeholder="Re-enter Password"  required>
+		<br>
+
+		<select name="role">
+			<option value="receptionist">Receptionist</option>
+			<option value="hr">HR</option>
+			<option value="Admin">Admin</option>
+		</select>
+		<br>
+		<br>
+		<input type="submit" value="Submit" name="b2" onclick="validate()">
+</form>
+</html>
+

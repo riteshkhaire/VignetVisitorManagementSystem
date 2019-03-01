@@ -1,0 +1,16 @@
+<html> <body> <script type='text/javascript'> 
+function Empty(element, AlertMessage)
+{ if(element.value.trim()== ""){
+alert(AlertMessage); 
+element.focus(); return false; 
+}	
+alert("Textbox Validation: Successful.") return true; 
+} 
+</script> 
+<form> Enter any value or left blank:
+ <input type='text' id='txtBox'/>
+  <input type='button' onclick="Empty(document.getElementById('txtBox'), 'Textbox is empty, Please Enter a Value')" value='Validate Textbox' />
+   </form> 
+   </body>
+   </html>
+
